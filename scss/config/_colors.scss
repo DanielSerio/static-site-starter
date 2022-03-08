@@ -1,0 +1,41 @@
+@use 'sass:math';
+
+$grey-hue: 227;
+$primary-hue: 107;
+$error-hue: 347;
+
+$grey-scale: (
+  black: hsl($grey-hue, 5%, 8%),
+  grey10: hsl($grey-hue, 5%, 10%),
+  grey20: hsl($grey-hue, 5%, 20%),
+  grey30: hsl($grey-hue, 5%, 30%),
+  grey40: hsl($grey-hue, 5%, 40%),
+  grey50: hsl($grey-hue, 5%, 50%),
+  grey60: hsl($grey-hue, 5%, 60%),
+  grey70: hsl($grey-hue, 5%, 70%),
+  grey80: hsl($grey-hue, 5%, 80%),
+  grey90: hsl($grey-hue, 5%, 90%),
+  white: hsl($grey-hue, 5%, 95%)
+);
+
+@function grey($n: 80) {
+  @return map-get($map: $grey-scale, $key: grey#{$n})
+}
+
+$white: map-get($map: $grey-scale, $key: white);
+$black: map-get($map: $grey-scale, $key: black);
+
+$link-color: hsl(227, 65%, 40%);
+$link-hover-color: hsl(227, 85%, 50%);
+$link-active-color: hsl(227, 65%, 30%);
+
+$primary-color: hsl(107, 85%, 40%);
+$primary-hover-color: hsl(107, 70%, 37%);
+$primary-active-color: hsl(107, 60%, 30%);
+
+$error-color: hsl(347, 75%, 40%);
+$error-hover-color: hsl(347, 70%, 37%);
+$error-active-color: hsl(347, 60%, 30%);
+
+$body-color: grey(30);
+$background-color: $white;

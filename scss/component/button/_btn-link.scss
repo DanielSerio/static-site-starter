@@ -1,0 +1,35 @@
+.btn-link {
+  color: white;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.5); 
+  padding: 0 2ch;
+  line-height: 2rem;
+  font-family: $font-family;
+  border-radius: 3px;
+  transition: background 213ms ease;
+
+  &:hover { color: white; }
+
+  &-cta { 
+    background: $primary-color; 
+    
+    &:hover { background: $primary-hover-color; }
+
+    &:active { background: $primary-active-color; }
+  }
+  
+  &-link { 
+    background: $link-color; 
+  
+    &:hover { background: $link-hover-color; }
+    
+    &:active { background: $link-active-color; }
+  }
+
+  &-error { 
+    background: $error-color; 
+  
+    &:hover { background: $error-hover-color; }
+    
+    &:active { background: $error-active-color; }
+  }
+}

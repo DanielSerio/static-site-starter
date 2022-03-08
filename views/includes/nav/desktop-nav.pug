@@ -1,0 +1,7 @@
+ul#desktopNav.desktop-nav
+  each link in pages 
+      li 
+        a(href=link.href)
+          span.icon 
+            i(data-feather=link.icon)
+          span.text= link.name

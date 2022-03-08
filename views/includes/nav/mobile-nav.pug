@@ -1,0 +1,14 @@
+div.mobile-nav-wrap
+  .contact-info
+    a(href="tel:+15555555555").phone 
+      span.text 1.555.555.5555
+    a.text-small.btn-link.btn-link-cta(href="/contact") Contact Us
+  button#menuButton.menu-icon-container
+    i(data-feather="menu")
+  ul#mobileNav.mobile-nav
+    each link in pages 
+      li 
+        a(href=link.href)
+          span.icon 
+            i(data-feather=link.icon)
+          span.text= link.name

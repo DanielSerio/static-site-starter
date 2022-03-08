@@ -1,0 +1,10 @@
+.footer {
+  margin-top: 3rem;
+  padding-top: 3rem;
+
+  & > .bottom {
+    text-align: center;
+    padding: 1ch 0;
+    color: grey(60);
+  }
+}

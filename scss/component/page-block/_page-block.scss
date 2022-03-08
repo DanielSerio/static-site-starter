@@ -1,0 +1,8 @@
+.page .page-block {
+  padding: 3rem 0;
+  
+  &.inverted {
+    background-color: grey(10);
+    color: grey(70);
+  }
+}
