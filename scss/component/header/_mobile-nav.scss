@@ -1,0 +1,32 @@
+.root > .page > .header .mobile-nav.open {
+  background: grey(10);
+  color: grey(70);
+  top: 1.5rem;
+  right: 5.5rem;
+  box-shadow: 0 0 12px -3px black;
+  padding: 1rem 0;
+  z-index: 9999;
+
+  li a {
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 200px;
+    
+    .icon { 
+      display: flex;
+      align-items: center;
+      margin-right: 2ch; 
+    }
+
+    &:hover > .icon, &:hover > .text { color: White; }
+  }
+}
+
+.root > .page > .header .mobile-nav {
+  position: relative;
+  transition: all 213ms ease;
+  transform-origin: center right;
+  border-radius: 3px;
+}

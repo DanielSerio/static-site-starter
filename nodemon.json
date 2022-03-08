@@ -2,7 +2,8 @@
   "watch": [
     "src/*",
     "scss/*",
-    "views/*"
+    "views/*",
+    "scripts/*"
   ],
   "ext": "ts,scss,pug",
   "exec": "concurrently \"tsc && tsc -p scripts\" \"sass ./scss/style.scss:./public/css/style.css\" && node dist"

@@ -5,7 +5,7 @@ div.mobile-nav-wrap
     a.text-small.btn-link.btn-link-cta(href="/contact") Contact Us
   button#menuButton.menu-icon-container
     i(data-feather="menu")
-  ul#mobileNav.mobile-nav
+  ul#menu.mobile-nav(data-is-open=false)
     each link in pages 
       li 
         a(href=link.href)

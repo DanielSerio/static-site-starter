@@ -1,0 +1,13 @@
+extends ../templates/basic-page.pug 
+
+block HEADER_CONTENT 
+  .logo-area
+    h1.logo Logo
+  nav#nav.nav
+    include ../includes/nav/desktop-nav.pug
+    include ../includes/nav/mobile-nav.pug
+block MAIN_CONTENT 
+  .page-block
+    .page-block-container
+      h1 Contact
+block FOOTER_CONTENT
