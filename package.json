@@ -28,6 +28,7 @@
     "reload": "^3.2.0"
   },
   "scripts": {
-    "start": "nodemon --config nodemon.json"
+    "start": "nodemon --config nodemon.json",
+    "build": "tsc && tsc -p ./scripts && sass ./scss/style.scss:./public/css/style.css"
   }
 }
